@@ -63,6 +63,7 @@ public class AssociadoController {
 		return ResponseEntity.created(uri).build();
 	}
 	
+	@PreAuthorize("hasAnyRole('ADMIN')")
 	@RequestMapping(value="/{id}", method=RequestMethod.PUT)
 	public ResponseEntity<Void> update(@Valid @RequestBody AssociadoEntityDTO objDto, @PathVariable Integer id) {
 		AssociadoEntity obj = service.fromDTO(objDto);
