@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -Dspring.profiles.active=prod $JAVA_OPTS -jar /SearaDivinaBE/target/SearaDivinaBE-0.0.1-SNAPSHOT.jar
+java -Dserver.port=$PORT -Dspring.profiles.active=prod -jar target/SearaDivinaBE-0.0.1-SNAPSHOT.jar
